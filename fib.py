@@ -7,4 +7,4 @@ app.testing = True
 
 @app.route('/')
 def app_root():
-    return '', 200
+    return flask.jsonify(message='welcome!'), 200
