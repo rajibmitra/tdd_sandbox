@@ -26,3 +26,9 @@ def test_get_fib_0_returns_value_0(client):
     response_dict = json.loads(response.data)
     assert 'value' in response_dict
     assert response_dict['value'] == 0
+
+
+def test_get_fib_8_returns_value_21(client):
+    response = client.get('/fib/8')
+    response_dict = json.loads(response.data)
+    assert response_dict['value'] == 21
