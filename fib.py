@@ -15,4 +15,7 @@ def get_fib(input_value):
 
 
 def fib(input_value):
-    return int(input_value)
+    n = int(input_value)
+    if n < 2:
+        return n
+    return fib(n-1) + fib(n-2)

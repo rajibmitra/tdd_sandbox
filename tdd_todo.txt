@@ -2,7 +2,7 @@ Acceptance test cases
 x Get / returns 200
 x Get / returns a json welcome message
 x Get /fib/0 returns value=0
-Get /fib/8 returns value=21
+x Get /fib/8 returns value=21
 Post to various urls not allowed 405
 Get /fib/<input> for non integers returns bad request 400
 Get /fib returns usage message
@@ -10,8 +10,8 @@ Get /fib returns usage message
 Unit Tests
 x 0 input gives 0
 x 1 input gives 1
-2 input gives 1
-6 input gives 8
+x 2 input gives 1
+x 6 input gives 8
 negative raises ValueError
 float raises ValueError
 string raises ValueError
