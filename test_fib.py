@@ -32,3 +32,8 @@ def test_get_fib_8_returns_value_21(client):
     response = client.get('/fib/8')
     response_dict = json.loads(response.data)
     assert response_dict['value'] == 21
+
+
+def test_post_to_fib_returns_405_not_allowed(client):
+    response = client.post('/fib/0')
+    assert response.status_code == 405

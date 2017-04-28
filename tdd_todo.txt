@@ -3,7 +3,7 @@ x Get / returns 200
 x Get / returns a json welcome message
 x Get /fib/0 returns value=0
 x Get /fib/8 returns value=21
-Post to various urls not allowed 405
+x Post to various urls not allowed 405
 Get /fib/<input> for non integers returns bad request 400
 Get /fib returns usage message
 
