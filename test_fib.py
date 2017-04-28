@@ -37,3 +37,13 @@ def test_get_fib_8_returns_value_21(client):
 def test_post_to_fib_returns_405_not_allowed(client):
     response = client.post('/fib/0')
     assert response.status_code == 405
+
+
+def test_get_fib_of_string_returns_400_bad_request(client):
+    response = client.get('/fib/not_an_int')
+    assert response.status_code == 400
+
+
+def test_get_fib_of_float_returns_400_bad_request(client):
+    response = client.get('/fib/4.5')
+    assert response.status_code == 400

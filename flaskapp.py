@@ -12,4 +12,8 @@ def app_root():
 
 @app.route('/fib/<input_value>')
 def get_fib(input_value):
-    return flask.jsonify(value=fib(input_value)), 200
+    try:
+        value = fib(input_value)
+    except ValueError:
+        return flask.jsonify(message='Value must be an integer'), 400
+    return flask.jsonify(value=value), 200
