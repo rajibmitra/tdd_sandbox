@@ -9,7 +9,7 @@ Get /fib returns usage message
 
 Unit Tests
 x 0 input gives 0
-1 input gives 1
+x 1 input gives 1
 2 input gives 1
 6 input gives 8
 negative raises ValueError

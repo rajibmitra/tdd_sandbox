@@ -15,4 +15,4 @@ def get_fib(input_value):
 
 
 def fib(input_value):
-    return 0
+    return int(input_value)
