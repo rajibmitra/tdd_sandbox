@@ -6,5 +6,5 @@ app.testing = True
 
 
 @app.route('/')
-def fib_root():
+def app_root():
     return '', 200
