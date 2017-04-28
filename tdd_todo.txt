@@ -1,0 +1,18 @@
+Acceptance test cases
+x Get / returns 200
+Get / returns a welcome message
+Get /fib returns usage message
+Get /fib/0 returns value=0
+Get /fib/8 returns value=21
+Post to various urls not allowed 405
+Get /fib/<input> for non integers returns bad request 400
+
+
+Unit Tests
+0 input gives 0
+1 input gives 1
+2 input gives 1
+6 input gives 8
+negative raises ValueError
+float raises ValueError
+string raises ValueError
