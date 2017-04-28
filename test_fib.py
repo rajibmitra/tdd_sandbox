@@ -1,15 +1,6 @@
 import pytest
-import flask
 
-
-app = flask.Flask('fib')
-app.testing = True
-
-
-@app.route('/')
-def fib_root():
-    return '', 200
-
+from fib import app
 
 # Acceptance tests
 def test_fib_rest_answers_200_ok():
