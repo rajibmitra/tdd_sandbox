@@ -1,6 +1,6 @@
 import pytest
 import json
-from fib import app
+from flaskapp import app
 
 
 @pytest.fixture
